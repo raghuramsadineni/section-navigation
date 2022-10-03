@@ -1,0 +1,101 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+.horizontalul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+}
+
+.horizontalli {
+    float: left;
+}
+
+.horizontallia {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.horizontallia:hover:not(.active) {
+    background-color: #ddd;
+}
+
+.horizontallia.active {
+    color: white;
+    background-color: #04aa6d;
+}
+
+/* horizontal navs */
+
+.verticalul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+    overflow: auto;
+}
+
+.verticallia {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.verticallia.active {
+    background-color: #04aa6d;
+    color: white;
+}
+
+.verticallia:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: -webkit-fill-available;
+}
+
+/* body layout styles */
+.header {
+    position: fixed;
+    top: 0;
+    width: -webkit-fill-available;
+}
+
+.bodyLayout {
+    margin-top: 50px;
+}
+
+.bodyLayoutAside {
+    float: left;
+    width: 25%;
+}
+
+.bodyLayoutAsideNav {
+    position: fixed;
+    width: inherit;
+}
+
+.bodyLayout article {
+    float: left;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.pageLayout {
+    height: 900px;
+}
