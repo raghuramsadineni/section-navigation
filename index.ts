@@ -12,7 +12,7 @@ document.addEventListener('scroll', (e: Event) => {
 
     if (window.location.hash != '#' + sectionElements[i].id) {
         // @ts-ignore
-        history.replaceState(null, null, '#' + sectionElements[i].id);
+        history.replaceState(null, '', '#' + sectionElements[i].id);
     }
 
     let navLinks: HTMLCollectionOf<HTMLAnchorElement> = document.getElementsByTagName('a')

@@ -8,8 +8,9 @@ document.addEventListener('scroll', function (e) {
         }
         i++;
     }
-    // @ts-ignore
-    history.replaceState(null, null, '#' + sectionElements[i].id);
+    if (window.location.hash != '#' + sectionElements[i].id) {
+        history.replaceState(null, '', '#' + sectionElements[i].id);
+    }
     var navLinks = document.getElementsByTagName('a');
     for (var i_1 = 0; i_1 < navLinks.length; i_1++) {
         if (navLinks[i_1].hash == window.location.hash) {
