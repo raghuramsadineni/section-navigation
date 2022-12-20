@@ -9,6 +9,7 @@ document.addEventListener('scroll', function (e) {
         i++;
     }
     if (window.location.hash != '#' + sectionElements[i].id) {
+        // @ts-ignore
         history.replaceState(null, '', '#' + sectionElements[i].id);
     }
     var navLinks = document.getElementsByTagName('a');
